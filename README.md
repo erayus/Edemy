@@ -8,4 +8,3 @@ An Online Learning Platform developed with an integrated gamification system to 
 - React
 - Django
 - SQLite
-
