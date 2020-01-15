@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from rest_framework.generics import(
+from rest_framework.generics import (
     ListAPIView,
     RetrieveAPIView,
     CreateAPIView
