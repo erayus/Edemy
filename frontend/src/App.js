@@ -1,26 +1,26 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import axios from 'axios';
+import CustomLayout from './containers/Layout.container';
+
+class  App extends Component {
+
+  componentDidMount(){
+    axios.get('http://127.0.0.1:8000/api/')
+      .then(res => console.log(res))
+  }
+
+
+  render(){
+    return (
+      <div className="App">
+        <CustomLayout></CustomLayout>
+      </div>
+    );
+  }
 }
 
 export default App;
