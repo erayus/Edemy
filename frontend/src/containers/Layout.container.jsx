@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
-import ArticleList from './ArticleListView.container';
+import Articles from './Articles.container';
 const { Header, Content, Footer } = Layout;
 
 
@@ -27,7 +27,7 @@ const CustomLayout = (props) => {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
-            <ArticleList/>
+            <Articles/>
 
           </div>
         </Content>
