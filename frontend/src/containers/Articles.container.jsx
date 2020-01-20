@@ -22,8 +22,9 @@ class Articles extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://127.0.0.1:0000/api/')
+        axios.get('http://127.0.0.1:8000/api/')
             .then(res => {
+                console.log(res.data);
                 this.setState({articles: res.data})
             })
     }
